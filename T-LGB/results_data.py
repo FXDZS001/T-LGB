@@ -222,7 +222,7 @@ def func_C():
 
 # 横向对比
 def func_XGB():
-    root_path = r'D:\hainan\回归\1000m以下'
+    root_path = r'D:\hainan\回归'
     for j in range(1, 22):
         read_samples = os.path.join(root_path, 'samples' , 'samples' + str(j) + '.npy')
         read_label = os.path.join(root_path, 'label', 'samples' + str(j) + '.npy')
@@ -257,7 +257,7 @@ def func_XGB():
         print('RMSE:',RMSE)
 
 def func_R():
-    root_path = r'D:\hainan\回归\回归'
+    root_path = r'D:\hainan'
     for j in range(21,22):
         read_samples = os.path.join(root_path, 'samples',  'samples' + str(j) + '.npy')
         read_label = os.path.join(root_path, 'label', 'samples' + str(j) + '.npy')
@@ -292,7 +292,7 @@ def func_R():
         print('RMSE:',RMSE)
         print("-" * 20)  # 打印分隔线
 def func_GBDT():
-    root_path = r'D:\hainan\回归\1000m以下'
+    root_path = r'D:\hainan\回归'
     for j in range(1, 22):
         read_samples = os.path.join(root_path, 'samples', 'samples' + str(j) + '.npy')
         read_label = os.path.join(root_path, 'label', 'samples' + str(j) + '.npy')
@@ -320,7 +320,7 @@ def func_GBDT():
         print('RMSE:', RMSE)
 
 def func_RandomForest():
-    root_path = r'D:\hainan\回归\1000m以下'
+    root_path = r'D:\hainan\回归'
     for j in range(1, 22):
         read_samples = os.path.join(root_path, 'samples', 'samples' + str(j) + '.npy')
         read_label = os.path.join(root_path, 'label', 'samples' + str(j) + '.npy')
@@ -352,7 +352,7 @@ def func_RandomForest():
 
 
 def func_AdaBoost():
-    root_path = r'D:\hainan\回归\1000m以下'
+    root_path = r'D:\hainan\回归'
     for j in range(1, 22):
         read_samples = os.path.join(root_path, 'samples', 'samples' + str(j) + '.npy')
         read_label = os.path.join(root_path, 'label', 'samples' + str(j) + '.npy')
@@ -492,4 +492,5 @@ if __name__ == "__main__":
     # XGBoost()
     # RandomForest()
     # AdaBoost()
+
 
